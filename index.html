@@ -14,7 +14,9 @@
     const isOffline = function () {
       document.getElementById('answer').innerText = 'Nop... :(';
     }
-    // Load an that you expect to come back quickly, and watch the onload event...
+    // Load an image, expecting to come back quickly...
+    // If it fails, server is down... if not, server is fine
+    // Logica Cavernicola tm.
     function isServerOnline(ifOnline, ifOffline) {
       var img = document.body.appendChild(document.createElement('img'));
       img.onload = function() {
